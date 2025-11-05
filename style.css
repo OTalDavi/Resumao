@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f7f9fc;
+}
+
+/* === HEADER === */
+header {
+  background-color: #ffffff;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+}
+
+#logo {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+}
+
+#logo img {
+  width: 40px;
+  height: 40px;
+}
+
+#logo h3 {
+  font-family: "Cinematográfica", sans-serif;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Newake", sans-serif;
+  font-size: 20px;
+}
+
+header li a:hover {
+  color: #8B1A10;
+}
+
+/* === SEÇÕES === */
+.container {
+  background: #ffffff;
+  border: solid 1px #ccc;
+  border-radius: 20px;
+  max-width: 1250px;
+  margin: 30px auto;
+  padding: 25px;
+}
+
+.container h1 {
+  font-family: "Newake", sans-serif;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.container h3 {
+  font-family: "Newake", sans-serif;
+  margin-top: 12px;
+}
+
+.texto, p, ul {
+  font-family: "text", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  margin-top: 10px;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+/* === RODAPÉ === */
+footer {
+  text-align: center;
+  background: #8B1A10;
+  color: #ffffff;
+  padding: 18px;
+  margin-top: 40px;
+  font-weight: bold;
+}
+
+/* === FONTES === */
+@font-face {
+  font-family: "Newake";
+  src: url(fonts/NewakeFont-Demo.otf) format("opentype");
+}
+
+@font-face {
+  font-family: "Cinematográfica";
+  src: url(fonts/Cinematografica-Heavy-trial.ttf) format("opentype");
+}
+
+@font-face {
+  font-family: "text";
+  src: url(fonts/Roboto-Light.ttf) format("truetype");
+}

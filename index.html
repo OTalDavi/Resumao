@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Introdução à Web & Infraestrutura</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<header>
+  <nav>
+    <a href="#" id="logo">
+      <img src="img/captive_portal_30dp_8B1A10_FILL0_wght400_GRAD0_opsz24.svg" alt="Logo">
+      <h3>Web Academy</h3>
+    </a>
+
+    <ul>
+      <li><a href="#linux">Linux</a></li>
+      <li><a href="#git">Git</a></li>
+      <li><a href="#hospedagem">Hospedagem</a></li>
+      <li><a href="#https_dns">HTTPS & DNS</a></li>
+      <li><a href="#glossario">Glossário</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- ✅ SEÇÃO 1 -->
+<section id="linux" class="container">
+  <h1>Comandos Linux</h1>
+
+  
+
+  <p>
+    O Linux é um sistema operacional muito usado em servidores, na nuvem e
+    por desenvolvedores. Sua maior força está na linha de comando: o **Shell**.
+  </p>
+
+  <h3>Comandos essenciais — Navegação</h3>
+  <ul class="texto">
+    <li><strong>ls</strong> — lista arquivos e pastas do diretório atual</li>
+    <li><strong>cd nomeDaPasta</strong> — acessa outra pasta</li>
+    <li><strong>pwd</strong> — mostra o caminho completo onde você está</li>
+  </ul>
+
+  <h3>Comandos essenciais — Manipulação de arquivos</h3>
+  <ul class="texto">
+    <li><strong>mkdir</strong> — cria novas pastas</li>
+    <li><strong>rm</strong> — apaga arquivos (use com cuidado!)</li>
+    <li><strong>mv</strong> — move ou renomeia arquivos</li>
+    <li><strong>cp</strong> — copia arquivos</li>
+  </ul>
+
+  <h3>Permissões e segurança</h3>
+  <ul class="texto">
+    <li><strong>sudo</strong> — permite executar comandos como administrador</li>
+    <li><strong>chmod</strong> — altera permissões de leitura/escrita/execução</li>
+  </ul>
+
+  <p class="texto"><strong>Dica:</strong> Desenvolvedores web usam Linux porque é o sistema dos servidores e da Internet!</p>
+</section>
+
+
+<!-- ✅ SEÇÃO 2 -->
+<section id="git" class="container">
+  <h1>Comandos Git</h1>
+
+  
+
+
+  <p>
+    O Git registra todas as versões do código, permitindo trabalho em equipe, histórico, backup e publicação em plataformas como GitHub.
+  </p>
+
+  <h3>Fluxo básico no Git</h3>
+  <ol class="texto">
+    <li><strong>git init</strong> — cria um repositório</li>
+    <li><strong>git add .</strong> — adiciona tudo para commit</li>
+    <li><strong>git commit -m "Mensagem"</strong> — salva versão do projeto</li>
+    <li><strong>git push</strong> — envia ao GitHub</li>
+  </ol>
+
+  <h3>Trabalhando com atualizações</h3>
+  <ul class="texto">
+    <li><strong>git pull</strong> — baixa atualizações do GitHub</li>
+    <li><strong>git clone link</strong> — copia um repositório existente</li>
+  </ul>
+
+  <p class="texto"><strong>Sem o Git, seria impossível controlar tudo que muda em um site!</strong></p>
+</section>
+
+
+<!-- ✅ SEÇÃO 3 -->
+<section id="hospedagem" class="container">
+  <h1>Plataformas de Hospedagem Estática</h1>
+
+  
+
+
+  <p>
+    Sites estáticos como este (HTML + CSS + JS) podem ser publicados gratuitamente com domínio seguro (HTTPS).
+  </p>
+
+  <h3>Comparação das plataformas</h3>
+  <ul class="texto">
+    <li><strong>GitHub Pages</strong> — ótimo para portfólios; roda direto do repositório</li>
+    <li><strong>Netlify</strong> — deploy automático e formulários sem backend</li>
+    <li><strong>Vercel</strong> — desempenho profissional com CDN global</li>
+    <li><strong>Render</strong> — suporta sites estáticos e também APIs, com SSL grátis</li>
+  </ul>
+
+  <p class="texto">
+    <strong>Conclusão:</strong> Todas atendem bem ao ensino e início na Web — o importante é **publicar**!
+  </p>
+</section>
+
+
+<section id="https_dns" class="container">
+  <h1>HTTPS & DNS</h1>
+
+
+
+  <h2>O que é HTTPS?</h2>
+  <p>
+    O <strong>HTTPS</strong> é um protocolo de comunicação segura entre o seu navegador e o servidor do site.
+    Ele é uma versão protegida do HTTP, usando criptografia para impedir que dados sejam roubados.
+  </p>
+
+  <h3>HTTP vs HTTPS</h3>
+  <ul class="texto">
+    <li><strong>HTTP</strong> — sem criptografia: informações podem ser interceptadas ❌</li>
+    <li><strong>HTTPS</strong> — criptografia com SSL/TLS: protege dados sensíveis ✅</li>
+  </ul>
+
+  <h3>O que HTTPS protege?</h3>
+  <ul class="texto">
+    <li>Senhas digitadas</li>
+    <li>Mensagens e dados pessoais</li>
+    <li>Dados cadastrados em formulários (login, pagamento etc.)</li>
+  </ul>
+
+  <p class="texto"><strong>Sinal visual:</strong> o cadeado ao lado do endereço do site 🔒 indica conexão segura.</p>
+
+  <hr><br>
+
+  <h2>O que é DNS?</h2>
+  <p>
+    O <strong>DNS</strong> (Domain Name System) funciona como a “agenda telefônica” da internet.
+    Ele converte nomes de sites (ex.: <em>google.com</em>) em endereços IP que os computadores entendem.
+  </p>
+
+  <h3>Exemplo</h3>
+  <p class="texto">
+    Você digita <strong>youtube.com</strong> 🡆 o DNS encontra o número do servidor, como:
+    <strong>142.250.78.174</strong>.  
+    Esse número é o verdadeiro endereço do site!
+  </p>
+
+  <h3>O caminho da conexão</h3>
+  <ol class="texto">
+    <li>Usuário digita o nome do site</li>
+    <li>O DNS encontra o IP correspondente</li>
+    <li>O navegador se conecta ao servidor correto</li>
+    <li>Se for HTTPS, a conexão é criptografada 🔐</li>
+  </ol>
+
+  <br>
+  <div class="texto" style="background: #e7f3ff; padding: 12px; border-left: 6px solid #0077cc; border-radius: 8px;">
+    ✅ <strong>Resumo Final:</strong><br>
+    <strong>DNS</strong> encontra o site → <strong>HTTPS</strong> protege a conexão → Navegador exibe a página ✔
+  </div>
+</section>
+
+
+
+<!-- ✅ SEÇÃO 5 -->
+<section id="glossario" class="container">
+  <h1>Glossário de Termos Importantes da Web</h1>
+  <p class="texto">
+    Este glossário reúne conceitos essenciais para entender como os sites funcionam na internet,
+    desde segurança até infraestrutura e publicação de conteúdo.
+  </p>
+
+  <ul class="glossario-grid texto">
+    <li><strong>💻 Sistema Operacional:</strong> Plataforma onde o computador roda os programas (Linux, Windows…).</li>
+    <li><strong>🐧 Linux:</strong> Sistema operacional livre e muito usado em servidores da internet.</li>
+    <li><strong>👨‍💻 Shell:</strong> Interface de linha de comando onde comandos são digitados no Linux.</li>
+    <li><strong>📂 Repositório:</strong> Pasta monitorada pelo Git, onde o histórico do código é salvo.</li>
+    <li><strong>📌 Commit:</strong> Registro de uma “versão salva” do projeto no Git.</li>
+    <li><strong>🔄 Push:</strong> Envia alterações para o GitHub ou outra plataforma remota.</li>
+    <li><strong>⬇️ Pull:</strong> Baixa atualizações que já estão no repositório remoto.</li>
+    <li><strong>☁️ Deploy:</strong> Publicar um site na internet para que todos possam acessar.</li>
+    <li><strong>🖥️ Servidor:</strong> Computador responsável por armazenar e entregar sites aos usuários.</li>
+    <li><strong>🌐 Domínio:</strong> Nome amigável do site (ex: <em>meusite.com</em>).</li>
+    <li><strong>#️⃣ IP:</strong> Endereço numérico que identifica dispositivos na rede.</li>
+    <li><strong>🗂️ DNS:</strong> Sistema que traduz nomes de domínio para IP — a “agenda telefônica da internet”.</li>
+    <li><strong>🔒 HTTPS:</strong> Protocolo de navegação segura com criptografia.</li>
+    <li><strong>🛡️ SSL/TLS:</strong> Tecnologia que garante a proteção de dados no HTTPS.</li>
+    <li><strong>🚀 CDN:</strong> Rede global que entrega sites mais rápido no mundo todo.</li>
+    <li><strong>⚙️ Protocolo:</strong> Conjunto de regras de comunicação entre computadores.</li>
+    <li><strong>🌍 Hospedagem Estática:</strong> Serviço que publica sites feitos com HTML, CSS e JS.</li>
+    <li><strong>🔧 Open Source:</strong> Software de código aberto que qualquer um pode estudar e modificar.</li>
+    <li><strong>🧠 Back-end:</strong> Parte do sistema que roda no servidor.</li>
+    <li><strong>🎨 Front-end:</strong> Parte visual do site que o usuário interage.</li>
+  </ul>
+
+  <div class="texto destaque">
+    ✅ <strong>Dica:</strong> Quanto mais você pratica Git, hospedagem e comandos Linux, mais fácil fica entender como a Internet funciona!
+  </div>
+</section>
+
+
+
+<footer>
+  © 2024 Web Academy — Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
