@@ -81,7 +81,7 @@ header li a:hover {
 }
 
 .texto, p, ul {
-  font-family: "text", sans-serif;
+  font-family: "text", sans-serif; 
   font-size: 18px;
   line-height: 26px;
   margin-top: 10px;
